@@ -4,8 +4,8 @@ const router = express.Router();
 const UserController= require("../controllers/userController")
 const BookController= require("../controllers/bookController")
 
-router.get("/test-me", function (req, res) {
-    res.send("My first ever api!")
+router.get(" ", function (req, res) {
+    res.send("My first ever api!") 
 })
 
 router.post("/createUser", UserController.createUser  )
@@ -15,5 +15,9 @@ router.get("/getUsersData", UserController.getUsersData)
 router.post("/createBook", BookController.createBook  )
 
 router.get("/getBooksData", BookController.getBooksData)
+
+router.post("/updateBook", bookController.updateBook  )
+
+
 
 module.exports = router;
